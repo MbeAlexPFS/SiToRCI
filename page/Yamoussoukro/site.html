@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiToRCI - Yamoussoukro</title>
+    <link rel="stylesheet" href="../../style/bootstrap.min.css">
+    <script src="../../script/bootstrap.bundle.min.js"></script>
+    <style>
+        .bg-head {
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: bg 10s infinite;
+        }
+
+        @keyframes bg {
+            0% {
+                background-image:  url("ressource/yamoussoukro-2.jpg");    
+            }
+            50% {
+                background-image:  url("ressource/yamoussoukro-1.jpeg");
+            }
+            100% {
+                background-image:  url("ressource/yamoussoukro-2.jpg");
+            }
+        }
+
+        
+        .tjustify {
+          margin: 0;
+          text-indent: 2rem;
+          text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Si</span><span class="text-success">To</span><span class="text-warning">RCI</span></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+            >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Menu
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="/"
+                                >Retourner sur la carte</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rdesc">région description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#stdesc">sites touristiques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gdesc">galerie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-sm pt-5 pb-5">
+        <div class="col-md-12 mt-5 bg-head p-5" id="rdesc">
+            <h1>Yamoussoukro</h1>
+            <p><strong>Yamoussoukro (prononcé localement /jam.so.kʁo/), familièrement « Yakro », est la capitale politique de la Côte d'Ivoire depuis mars 1983, et le village natal du président Félix Houphouët-Boigny. C'est la seule ville de la Côte d'Ivoire à avoir bénéficié d'un plan d'urbanisme personnalisé, ce qui la différencie des autres. Son aménagement extensif se distingue par ses larges avenues, souvent bordées de rangées d'arbres parfois doubles, de bas-côtés amples et parfois engazonnés et plantés d'arbustes ornementaux, et par ses nombreux espaces boisés d'essences variées, véritables « forêts urbaines ».</strong></p>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <a href="ressource/abidjan-3.jpeg" target="_blank">
+                    <img class="img-flud w-100" src="ressource/yamoussoukro-3.jpeg" height="400px">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">Carte</h1>
+                <p class="tjustify">Yamoussoukro se situe au centre du pays dans la Région des Lacs, à 248 km d'Abidjan. Elle est située dans un relief plat, recouvert d'une savane arborée et traversée par des cours d'eau dont la Marahoué et le N'Zi, deux affluents du Bandama. Le district de Yamoussoukro, situé entre 6 °15 et 7 °35 de latitude nord et 4 °40 et 5 °40 de longitude ouest, fait partie de la grande Région des lacs.
+                </p>
+            </div>
+        </div>
+        <h1 id="stdesc" class="p-3 mt-2">Sites touristiques d'Abidjan</h1>
+        <div class="row border border-dark shadow p-3 m-2">
+            <div class="col-md-4">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img
+                                src="ressource/yamoussoukro-1.jpeg"
+                                class="w-100 d-block"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="ressource/yamoussoukro-2.jpg"
+                                class="w-100 d-block"
+                                alt="Second slide"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>   
+            </div>
+            <div class="col-md-8">
+                <h1>Basilique Notre-Dame de la Paix</h1>
+                <h6 class="text-secondary">La plus grande basilique au monde</h6>
+                <p class="mt-3">
+                    La basilique Notre-Dame-de-la-Paix, située à Yamoussoukro, capitale politique de la Côte d'Ivoire⁣⁣⁣, est l'une des plus grandes églises catholiques du monde et le deuxième plus haut édifice chrétien du monde derrière l'Église principale d'Ulm. Elle est construite à l'initiative du premier président du pays, Félix Houphouët-Boigny, en 1983. Son apparence rappelle celle de la basilique Saint-Pierre à Rome. Le recteur de la basilique est Geoffroy Kouadio Kouamé,sac.
+                </p>
+            </div>
+        </div>
+        <div class="row border border-dark shadow p-3 m-2">
+            <div class="col-md-4">
+                <div id="carouselId2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img
+                                src="ressource/fhb-1.jpeg"
+                                class="w-100 d-block"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="ressource/fhb-2.jpeg"
+                                class="w-100 d-block"
+                                alt="Second slide"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId2"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId2"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>   
+            </div>
+            <div class="col-md-8">
+                <h1>Fondation Félix Houphouët-Boigny</h1>
+                <h6 class="text-secondary">Centre culturel et historique</h6>
+                <p class="mt-3">
+                    La Fondation Félix Houphouët-Boigny pour la recherche de la paix est un institut de recherche sur les questions de la paix dont le siège se trouve à Yamoussoukro en Côte d'Ivoire. Elle est aujourd'hui gérée par l'UNESCO[1].
+                </p>
+            </div>
+        </div>
+        <div class="row border border-dark shadow p-3 m-2">
+            <div class="col-md-4">
+                <div id="carouselId3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img
+                                src="ressource/lac-1.jpeg"
+                                class="w-100 d-block"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="ressource/lac-2.jpeg"
+                                class="w-100 d-block"
+                                alt="Second slide"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId3"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId3"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>   
+            </div>
+            <div class="col-md-8">
+                <h1>Lac aux Caïmans</h1>
+                <h6 class="text-secondary">Un lac sacré abritant des caïmans</h6>
+                <p class="mt-3">
+                    La ville de Yamoussoukro, capitale politique de la Côte d’Ivoire depuis 1983 est aussi appelée la ville des lacs. Parmi ses nombreux, l’un d’entre eux tire son épingle. Il s’agit du Lac aux « caïmans » situé en face de la Présidence, lieu de résidence de feu le Président Félix-Houphouët Boigny. Mais il est important de signifier quelque chose Les animaux qui sont dans ce lac ne sont pas des caïmans mais ce sont des « crocodiles du Nil ». Ce lac à été crée en 1950 et selon ce qui se raconte, c’est en 1967 que les premiers crocodiles ont été offerts au Premier Président de la Côte d’Ivoire par son homologue du Mali, le Président Modibo Kéïta. Pour le reste des crocodiles, c’est F.H.B qui les a acquis lui-même dans la région de Touba. Certains disaient donc que ces crocodiles représentaient aussi et surtout la puissance politique de Félix Houphouët-Boigny.
+                </p>
+            </div>
+        </div>
+        <h1 id="gdesc" class="p-3 mt-2">Galerie</h1>
+        <div
+            class="row justify-content-center align-items-center g-2"
+        >
+            <div class="col"><img class="w-100" src="ressource/yamoussoukro-1.jpeg" height="300px"></div>
+        </div>
+        <div
+            class="row justify-content-center align-items-center g-2"
+        >
+            <div class="col"><img class="w-100" src="ressource/yamoussoukro-2.jpg"  height="300px"></div>
+            <div class="col"><img class="w-100" src="ressource/yamoussoukro-3.jpeg"  height="300px"></div>
+            <div class="col"><img class="w-100" src="ressource/fhb-1.jpeg"  height="300px"></div>
+        </div>
+        <div
+            class="row justify-content-center align-items-center g-2"
+        >
+            <div class="col"><img class="w-100" src="ressource/fhb-2.jpeg"  height="300px"></div>
+            <div class="col"><img class="w-100" src="ressource/lac-1.jpeg"  height="300px"></div>
+            <div class="col"><img class="w-100" src="ressource/lac-2.jpeg"  height="300px"></div>
+        </div>
+    </div>
+    <div class="footer bg-dark text-white p-2 text-center">
+        <h5>Tous droits reservé SiToRCI 2025-2026</h5>
+    </div>
+</body>
+</html>

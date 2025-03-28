@@ -1,0 +1,250 @@
+{
+    "empty": {},
+
+    "Abidjan": {
+        "Plateau": {
+            "Title": "Le Plateau",
+            "ShortDesc": "Centre économique et administratif",
+            "Desc": "Quartier des affaires avec ses gratte-ciels, ministères et la célèbre Cathédrale Saint-Paul, symbole architectural moderne."
+        },
+        "Jardin Botanique de Bingerville": {
+            "Title": "Jardin Botanique de Bingerville",
+            "ShortDesc": "Espace vert historique",
+            "Desc": "Créé en 1904, ce jardin abrite des centaines d’espèces végétales et un cadre paisible pour des promenades."
+        },
+        "Musée des Civilisations de Côte d Ivoire": {
+            "Title": "Musée des Civilisations de Côte d Ivoire",
+            "ShortDesc": "Trésor culturel ivoirien",
+            "Desc": "Ce musée expose des masques, des statues et des objets traditionnels représentant la diversité ethnique du pays."
+        }
+    },
+
+    "Yamoussoukro": {
+        "Basilique Notre-Dame de la Paix": {
+            "Title": "Basilique Notre-Dame de la Paix",
+            "ShortDesc": "La plus grande basilique au monde",
+            "Desc": "Inspirée de la basilique Saint-Pierre de Rome, cette imposante structure est un symbole de paix et de foi en Côte d Ivoire."
+        },
+        "Lac aux Caïmans": {
+            "Title": "Lac aux Caïmans",
+            "ShortDesc": "Un lac sacré abritant des caïmans",
+            "Desc": "Ce lac est un lieu sacré où des caïmans sont nourris rituellement. Une attraction unique liée à l histoire de la ville."
+        },
+        "Fondation Félix Houphouët-Boigny": {
+            "Title": "Fondation Félix Houphouët-Boigny",
+            "ShortDesc": "Centre culturel et historique",
+            "Desc": "Dédiée au premier président ivoirien, cette fondation abrite des archives historiques et des expositions culturelles."
+        }
+    },
+
+    "Lacs": {
+        "Parc National d Azagny": {
+            "Title": "Parc National d Azagny",
+            "ShortDesc": "Réserve naturelle riche en biodiversité",
+            "Desc": "Ce parc abrite éléphants, hippopotames et oiseaux rares, idéal pour des safaris et randonnées en pleine nature."
+        },
+        "Grand-Bassam": {
+            "Title": "Grand-Bassam",
+            "ShortDesc": "Ville historique classée à l UNESCO",
+            "Desc": "Ancienne capitale coloniale, connue pour ses plages, son architecture vintage et son musée du costume."
+        },
+        "Îles Ehotilé": {
+            "Title": "Îles Ehotilé",
+            "ShortDesc": "Archipel préservé",
+            "Desc": "Six îles paradisiaques avec des villages de pêcheurs, une réserve ornithologique et des paysages tropicaux."
+        }
+    },
+
+    "Comoé": {
+        "Parc National de la Comoé": {
+            "Title": "Parc National de la Comoé",
+            "ShortDesc": "Plus grande réserve d Afrique de l Ouest",
+            "Desc": "Classé UNESCO, il abrite lions, éléphants et antilopes, avec des paysages de savane et de forêt-galerie."
+        },
+        "Monts Nimba": {
+            "Title": "Monts Nimba",
+            "ShortDesc": "Site transfrontalier classé UNESCO",
+            "Desc": "Chaîne de montagnes abritant une biodiversité exceptionnelle, dont des espèces endémiques comme le crapaud vivipare."
+        },
+        "Réserve de N Zo": {
+            "Title": "Réserve de N Zo",
+            "ShortDesc": "Sanctuaire pour éléphants et chimpanzés",
+            "Desc": "Cette réserve privée jouxte le parc de la Comoé et offre des safaris pour observer des éléphants de forêt, des chimpanzés et des oiseaux rares dans un cadre préservé."
+        }
+    },
+
+    "Denguélé": {
+        "Mont Tingui": {
+            "Title": "Mont Tingui",
+            "ShortDesc": "Site sacré et panorama unique",
+            "Desc": "Montagne vénérée par les populations locales, offrant une vue imprenable sur la région du Denguélé."
+        },
+        "Forêt Classée du Scio": {
+            "Title": "Forêt Classée du Scio",
+            "ShortDesc": "Ecosystème préservé",
+            "Desc": "Forêt dense abritant des primates et des essences rares, idéale pour la randonnée et l étude de la flore."
+        },
+        "Ville d Odienné": {
+            "Title": "Ville d Odienné",
+            "ShortDesc": "Berceau de l empire Malinké",
+            "Desc": "Ville historique avec le tombeau de Samory Touré et des traditions culturelles vivaces."
+        }
+    },
+
+    "Gôh-Djiboua": {
+        "Parc National de Taï": {
+            "Title": "Parc National de Taï",
+            "ShortDesc": "Forêt primaire classée UNESCO",
+            "Desc": "Dernière grande forêt tropicale d Afrique de l Ouest, refuge des chimpanzés et des hippopotames pygmées."
+        },
+        "Cascades de Nahiri": {
+            "Title": "Cascades de Nahiri",
+            "ShortDesc": "Chutes d eau spectaculaires",
+            "Desc": "Série de cascades entourées d une végétation luxuriante, lieu de baignade et de pique-nique."
+        },
+        "Sanctuaire de Marahoué": {
+            "Title": "Sanctuaire de Marahoué",
+            "ShortDesc": "Zone protégée pour la faune",
+            "Desc": "Ancien parc national, aujourd hui sanctuaire pour éléphants et oiseaux migrateurs."
+        }
+    },
+
+    "Lagunes": {
+        "Assinie": {
+            "Title": "Assinie",
+            "ShortDesc": "Station balnéaire prisée",
+            "Desc": "Plages de sable fin, sports nautiques et ambiance festive, destination préférée des Abidjanais."
+        },
+        "Île Boulay": {
+            "Title": "Île Boulay",
+            "ShortDesc": "Retrait paisible sur la lagune",
+            "Desc": "Petite île idéale pour des escapades romantiques ou des déjeuners en bord d eau."
+        },
+        "Réserve de Dahliafleur": {
+            "Title": "Réserve de Dahliafleur",
+            "ShortDesc": "Jardin écologique",
+            "Desc": "Espace vert aménagé avec des plantes médicinales et des sentiers pédagogiques."
+        }
+    },
+
+    "Montagnes": {
+        "Mont Tonkpi": {
+            "Title": "Mont Tonkpi",
+            "ShortDesc": "Point culminant de l Ouest",
+            "Desc": "Sommet offrant des vues panoramiques sur les paysages montagneux et les plantations de café."
+        },
+        "Ville de Man": {
+            "Title": "Ville de Man",
+            "ShortDesc": "Cité aux 18 montagnes",
+            "Desc": "Connue pour ses ponts de lianes, ses cascades (Dent de Man) et son festival des arts et traditions."
+        },
+        "Cascade de Kpata": {
+            "Title": "Cascade de Kpata",
+            "ShortDesc": "Site naturel rafraîchissant",
+            "Desc": "Chute d eau entourée de rochers, lieu de baignade et de détente en pleine forêt."
+        }
+    },
+
+    "Sassandra-Marahoué": {
+        "Parc de la Marahoué": {
+            "Title": "Parc de la Marahoué",
+            "ShortDesc": "Ancienne réserve animalière",
+            "Desc": "Bien que menacé par le braconnage, le parc abrite encore des buffles et des antilopes."
+        },
+        "Ville de Bouaflé": {
+            "Title": "Ville de Bouaflé",
+            "ShortDesc": "Carrefour culturel",
+            "Desc": "Connue pour son marché animé et ses festivals mettant en valeur la culture Gouro."
+        },
+        "Barrage de Buyo": {
+            "Title": "Barrage de Buyo",
+            "ShortDesc": "Lac artificiel et paysages",
+            "Desc": "Site propice à la pêche et aux balades en pirogue, avec des collines verdoyantes en toile de fond."
+        }
+    },
+
+    "Savanes": {
+        "Parc National de la Comoé (extension nord)": {
+            "Title": "Parc National de la Comoé (extension nord)",
+            "ShortDesc": "Zone sauvage préservée",
+            "Desc": "Partie nord du parc, moins fréquentée, où l on peut observer des léopards et des phacochères."
+        },
+        "Ville de Korhogo": {
+            "Title": "Ville de Korhogo",
+            "ShortDesc": "Capitale des Sénoufo",
+            "Desc": "Centre artistique réputé pour ses tisserands, ses sculpteurs sur bois et son marché artisanal."
+        },
+        "Monts Korhogo": {
+            "Title": "Monts Korhogo",
+            "ShortDesc": "Formations rocheuses sacrées",
+            "Desc": "Collines sacrées utilisées pour des rites traditionnels, offrant un panorama sur la savane."
+        }
+    },
+
+    "Bas-Sassandra": {
+        "San-Pédro": {
+            "Title": "San-Pédro",
+            "ShortDesc": "Port et plages",
+            "Desc": "Deuxième port du pays, avec des plages isolées comme Monogaga, idéales pour le surf et la détente."
+        },
+        "Parc National de Taï (extension sud)": {
+            "Title": "Parc National de Taï (extension sud)",
+            "ShortDesc": "Biodiversité exceptionnelle",
+            "Desc": "Partie méridionale du parc, où vivent des éléphants de forêt et des crocodiles nains."
+        }
+    },
+
+    "ValléeduBandama": {
+        "Kossou": {
+            "Title": "Kossou",
+            "ShortDesc": "Lac de barrage et nature",
+            "Desc": "Vaste plan d eau artificiel propice à la pêche, aux balades en bateau et à l observation des oiseaux."
+        },
+        "Toumodi": {
+            "Title": "Toumodi",
+            "ShortDesc": "Carrefour agricole",
+            "Desc": "Région connue pour ses plantations d ananas et son marché coloré de produits locaux."
+        },
+        "Vallée du N Zi": {
+            "Title": "Vallée du N Zi",
+            "ShortDesc": "Paysages fluviaux",
+            "Desc": "Zone rurale traversée par la rivière N Zi, idéale pour l agrotourisme et les rencontres avec les communautés Baoulé."
+        }
+    },
+
+    "Woroba": {
+        "Monts du Toura": {
+            "Title": "Monts du Toura",
+            "ShortDesc": "Chaîne montagneuse isolée",
+            "Desc": "Région reculée abritant des villages traditionnels Dan et des paysages escarpés."
+        },
+        "Réserve de Bouna": {
+            "Title": "Réserve de Bouna",
+            "ShortDesc": "Zone protégée méconnue",
+            "Desc": "Espace sauvage abritant des babouins et des oiseaux rares, accessible en 4x4."
+        },
+        "Ville de Séguéla": {
+            "Title": "Ville de Séguéla",
+            "ShortDesc": "Cœur de la culture Malinké",
+            "Desc": "Connue pour son marché d or artisanal et ses danses traditionnelles."
+        }
+    },
+
+    "Zanzan": {
+        "Parc National du Zanzan": {
+            "Title": "Parc National du Zanzan",
+            "ShortDesc": "Ecosystème de savane arborée",
+            "Desc": "Abrite des espèces adaptées à la sécheresse comme les oryx et les autruches."
+        },
+        "Ville de Bouna": {
+            "Title": "Ville de Bouna",
+            "ShortDesc": "Porte du Sahel ivoirien",
+            "Desc": "Carrefour commercial historique, avec une architecture en banco et des traditions peules."
+        },
+        "Monts du Zanzan": {
+            "Title": "Monts du Zanzan",
+            "ShortDesc": "Reliefs sacrés",
+            "Desc": "Collines utilisées pour des rituels animistes par les populations Koulango."
+        }
+    }
+}
