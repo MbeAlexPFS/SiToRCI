@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <script src="script/bootstrap.bundle.min.js"></script>
 </head>
-<body class="">
+<body>
     <svg id="my_dataviz">
         <defs>
             <pattern id="pattern" patternUnits="userSpaceOnUse" width="10" height="10">
@@ -17,10 +17,13 @@
             </pattern>
         </defs>
     </svg>
+    <!-- banner -->
     <div class="position-absolute top-0 p-2 text-center">
         <h1><span class="text-dark">Si</span><span class="text-success">To</span><span class="text-warning">RCI</span></h1>
         <p><strong><em>les Sites TouRistiques de la Côte d'Ivoire</em></strong></p>
     </div>
+
+    <!-- Menu -->
     <div class="position-absolute top-0 end-0 h-100 w-25 d-flex align-items-center justify-content-center">
         <div class="card">
             <div class="card-header">
@@ -41,26 +44,26 @@
                   
             </div>
         </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="seeMore" tabindex="-1"  aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Region : <span id="showRegion"></span></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body p-5" id="show">
-                   
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-              </div>
+    </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="seeMore" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Region : <span id="showRegion"></span></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5" id="show">
+                 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
           </div>
         </div>
-        
-    </div>
+      </div>
     <script src="script/d3.min.js"></script>
     <script src="script/app.js"></script>
 </body>

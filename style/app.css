@@ -19,7 +19,6 @@ text a {
   font-weight: bold;
   font-size: small;
   fill: black;
-  text-shadow: 0 0 15px black;
   text-decoration: none;
   transition: 0.5s;
 }
