@@ -4,4 +4,4 @@ Est un projet presonnel dans lequel on peut rechercher des sites touristiques pa
 ## Fonctionnalités
 - Barre de recherche.
 - Visionnage approfondi des sites dans un popup.
-- Des sites internes et externes pour détailler encore plus les régions et les sites.
+- Des liens internes pour détailler encore plus les régions et les sites.
