@@ -3,22 +3,39 @@
   border: 2px solid grey;
 }
 
-.no-checked {
-  fill: rgb(0, 0, 0);
-  fill-opacity: 0.1;
+.Abidjan {
+  fill: url(#ecole);
 }
 
-.no-checked:hover {
-  fill: url(#pattern);
-  fill-opacity: 1;
-  transition: 1s;
+.Comoé {
+  fill: url(#agriculture);
+}
+
+.Gôh-Djiboua {
+  fill: url(#elevage);
+}
+
+.Denguélé {
+  fill: url(#transport);
+}
+
+.Lagunes {
+  fill : url(#patisserie);
+}
+
+path {
+  fill-opacity: 0.5;
+}
+
+path:hover {
+  fill-opacity: 0.8;
 }
 
 text a {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-size: small;
-  fill: black;
+  fill: rgb(60, 0, 255);
   text-decoration: none;
   transition: 0.5s;
 }

@@ -1,23 +1,5 @@
 //------ Données ------
-//site donnée
-let sitedata
-fetch('../data/data.json')
-        .then(response => response.json())
-        .then(data => {
-            sitedata = data
-        }).catch(error => { console.error('Error loading JSON data:', error);
-        });
-
 //------ Rendre la carte ------
-//Généré des couleurs
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
 
 //taille du cadre
 var width = window.innerWidth,
@@ -49,22 +31,20 @@ d3.json("../data/gadm41_CIV_1.json").then(function (data) {
 
     // Dessiner les paths
     regionGroups.append("path")
-        .attr("class", d => `${d.geometry.type} no-checked`)
+        .attr("class", d => `${d.geometry.type} no-checked ${d.properties.NAME_1}`)
         .attr("name", d => d.properties.NAME_1)
         .attr("fill", "#fff")
         .attr("stroke", "#000")
         .attr("d", path);
 
+
     // Ajouter les textes
     regionGroups.append("text")
-        .attr("class", "region-label")
+        .attr("class","region-label")
         .attr("text-anchor", "middle")
         .attr("x", d => path.centroid(d)[0])
         .attr("y", d => path.centroid(d)[1])
         .append("a").attr("href",d => "page/"+d.properties.NAME_1+"/site.html").text(d => d.properties.NAME_1)
-
-        //première mise à jours
-        init()
 });
 
 //-- Fonction de zoom --
@@ -102,103 +82,4 @@ function zoomed(event) {
 
 function reset() {
     svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
-}
-
-//------ initiation des entrées ------
-var selectedRegion
-var searchInput
-function init() {
-    //recupere la barre de recherche
-    selectedRegion = "empty"
-    searchInput = document.querySelector("#search")
-    searchInput.oninput = () => {
-        update()    
-    }
-
-    //selectionne et deselectionne une region
-    let mp = document.querySelectorAll(".MultiPolygon")
-    mp.forEach((p) => {
-        p.setAttribute("stroke",getRandomColor())
-        p.onclick = () => {
-            if (p.classList.contains("no-checked")) {
-                mp.forEach((e) => {
-                    if (! e.classList.contains("no-checked") ) {
-                        e.classList.add("no-checked")
-                    }
-                })
-                p.classList.remove("no-checked")
-                p.setAttribute("fill", p.getAttribute("stroke"))
-                selectedRegion = p.getAttribute("name")
-                update() 
-            }else{
-                p.classList.add("no-checked")
-                selectedRegion = "empty"
-                update()
-            }
-        }
-    })
-
-    //première mise à jour
-    update()
-}
-
-//mis à jour fonction
-function update() {
-    let container = document.querySelector("#container")
-    container.innerHTML = ``
-    Object.keys(sitedata).forEach((region) => {
-    if (Object.keys(sitedata[selectedRegion]).length == 0 && selectedRegion != "empty") { //aucun site dans un region
-        container.innerHTML = `<div title="empty" class="w-100 h-100 bg-secondary text-white d-flex align-items-center text-center p-2"><h6>Aucun site trouvé dans cette la region ${selectedRegion}</h6></div>`      
-        
-    }else if (Object.keys(sitedata[region]).length > 0) { 
-        Object.keys(sitedata[region]).forEach((el) => {
-            let site = sitedata[region][el]
-            if (region == selectedRegion && (site.Title).toLowerCase().includes(searchInput.value.toLowerCase()) || ((site.Title).toLowerCase().includes(searchInput.value.toLowerCase()) && selectedRegion == "empty" )) {
-                container.innerHTML +=
-                `<div class="shadow p-3 mb-5 bg-white rounded border border-dark">
-                
-                    <div class="card-title">
-                        <h4 >${site.Title}</h4>
-                        <h6 class="text-secondary">${region}</h6>
-                    <div>
-                    
-                    <p class="card-text">${site.ShortDesc}</p>
-                    <div class="d-grid gap-2">
-                        <button
-                            type="button"
-                            onclick='show("${region}", "${el}")'
-                            data-bs-toggle="modal" data-bs-target="#seeMore"
-                            class="btn btn-primary"
-                        >
-                            Voir plus
-                        </button>
-                    </div>
-                
-                </div> `
-            }    
-        })
-        
-    }})
-    if (searchInput.value != "" && container.innerHTML == ``) {
-        container.innerHTML = `<div title="empty" class="w-100 h-100 bg-secondary text-white d-flex align-items-center text-center p-2"><h6>Aucun site ne correspond à votre recherche</h6></div>`   
-    }    
-}
-
-//change popup data
-function show(region,site) {
-    let sregion = document.querySelector("#showRegion")
-    sregion.textContent = region
-    let popup = document.querySelector("#show")
-    popup.innerHTML =
-    `<div class="text-end">
-            <h1>${sitedata[region][site].Title}</h1>
-            <p>${sitedata[region][site].ShortDesc}</p>
-        </div>
-    <p class="tjustify w-100 mt-2">
-        ${sitedata[region][site].Desc}
-    </p>
-    <p class="text-center mt-2">
-        <a href="${ "page/"+region+"/site.html" }">Site de la region</a>
-    </p>
-    `
 }

@@ -3,46 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiToRCI - Lagunes</title>
+    <title>FusSite - Lagunes - Patisserie</title>
     <link rel="stylesheet" href="../../style/bootstrap.min.css">
     <script src="../../script/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../ressource/bootstrap-icons.css">
     <style>
-        .bg-head {
-            background-size: cover;
+        .bg-home {
+            background: url("ressource/cake2.jpg");
             background-repeat: no-repeat;
-            animation: bg 10s infinite;
+            background-size: cover;
+            background-position: center;
+            height: 50dvh;
         }
 
-        #rdesc h1,#rdesc p{
-            backdrop-filter: blur(10px);
-            padding: 10px;
+        .bg-home h1, .bg-home h3 {
+            backdrop-filter: blur(25px);
+            padding: 20px;
+            margin: 0;
         }
 
-        @keyframes bg {
-            0% {
-                background-image:  url("ressource/sit1-2.jpg");    
-            }
-            50% {
-                background-image:  url("ressource/sit1-1.jpg");
-            }
-            100% {
-                background-image:  url("ressource/sit1-2.jpg");
-            }
+        .pink {
+            background-color: pink;
         }
 
-        
-        .tjustify {
-          margin: 0;
-          text-indent: 2rem;
-          text-align: justify;
+        .img {
+            width: 100px;
+            height: 200px;
         }
 
+        .ico {
+            width: 30px;
+            height: 30px;
+        }
+        .z-100 {
+            z-index: 100;
+        }
     </style>
+    <script>
+        //Retour à l'en-tête
+        function scrollUp() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        }
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light fixed-top">
+    <button class="z-100 position-fixed bottom-0 right-0 btn btn-primary rounded-circle m-5" onclick="scrollUp()">En tête ↑</button>
+    <nav class="navbar navbar-light pink fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Si</span><span class="text-success">To</span><span class="text-warning">RCI</span></a>
+            <a class="navbar-brand" href="/">FusSite - Mon<span class="text-light">Cake</span></a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -80,202 +91,254 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#rdesc">région description</a>
+                            <a class="nav-link" href="#accueil">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#stdesc">sites touristiques</a>
+                            <a class="nav-link" href="#about">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gdesc">galerie</a>
+                            <a class="nav-link" href="#prod">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#avis">Avis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn pink w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Connexion</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Formulaire de connexion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-2">
+                  <div class="mb-3">
+                      <label for="" class="form-label">Nom</label>
+                      <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Votre nom"
+                      />
+                  </div>
+                  <div class="mb-3">
+                      <label for="" class="form-label">Email</label>
+                      <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Votre email"
+                      />
+                  </div>
+                  <div class="mb-3">
+                      <label for="" class="form-label">Mot de passe</label>
+                      <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Votre mot de passe"
+                      />
+                  </div>
+              
+                  <div class="row justify-content-between">
+                      <div class="col">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="" id="" />
+                              <label class="form-check-label" for=""> Rester connecter </label>
+                          </div>
+                      </div>
+                      
+                      <div class="col text-end">
+                          <a href="#">Voir les conditions</a>
+                      </div>
+                  </div>
+                  
+              
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn pink">Se connecter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <div class="col-12 bg-home mt-5" id="accueil">
+        <h1>MonCake</h1>
+        <h3 class="text pink">Une saveur exceptionnelle</h3>
+    </div>
+    <div class="container-sm">
+        <h1><em>Bienvenu dans le palais des gateaux</em></h1>
 
-    <div class="container-sm pt-5 pb-5">
-        <div class="col-md-12 mt-5 bg-head p-5" id="rdesc">
-            <h1>Lagunes</h1>
-            <p><strong>La région des Lagunes est une ancienne division administrative de Côte d'Ivoire située au sud du pays. Depuis 2011, elle a été démembrée : le département d'Abidjan est devenu district autonome, tandis que le reste de la région a fusionné avec une partie de l'ancienne région de l'Agnéby pour former le nouveau district des Lagunes.Elle avait pour chef-lieu la capitale économique Abidjan.Cette région était peuplée en majorité par les ethnies côtières (Ébriés, Attiés, Adioukrous). La région des Lagunes comptait à elle seule 34 % de la population nationale.</strong></p>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <a href="ressource/sit1-3.jpeg" target="_blank">
-                    <img class="img-flud w-100" src="ressource/sit1-3.jpeg" height="400px">
-                </a>
+        <div class="row" id="prod">
+            <div class="col d-flex">
+                <img class="img shadow-red col-sm" src="ressource/croissant.jpg" alt="Boulagerie">
+                <img class="img shadow-blue col-sm" src="ressource/icecream.jpg" alt="Glacierie">
+                <img class="img shadow-purple col-sm" src="ressource/cake.jpg" alt="Patisserie">
             </div>
-            <div class="col-md-6">
-                <h1 class="text-center">Carte</h1>
-                <p class="tjustify">Lagunes est la région côtière orientale de la Côte d'Ivoire. Elle est composée de la région de Sud-Comoé, du district des Lagunes et du district autonome d'Abidjan.
-                </p>
+            <div class="col border rounded border-dark bg-dark text-light">
+                <span class="uppercase">I</span>ci nous vous offrons une expérience gustative riche et variée, de la vienoiserie classique aux gateaux crèmeux en     passant par des glaces moelleux. 
             </div>
         </div>
-        <h1 id="stdesc" class="p-3 mt-2">Sites touristiques d'Abidjan</h1>
-        <div class="row border border-dark shadow p-3 m-2">
-            <div class="col-md-4">
-                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img
-                                src="ressource/sit1-1.jpg"
-                                class="w-100 d-block"
-                                alt="First slide"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="ressource/sit1-2.jpg"
-                                class="w-100 d-block"
-                                alt="Second slide"
-                            />
-                        </div>
-                    </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselId"
-                        data-bs-slide="prev"
-                    >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselId"
-                        data-bs-slide="next"
-                    >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>   
+
+        <div class="card shadow text-light bg-dark p-2 m-5">
+            <h2>Un service constant 7j/7</h2>
+            <p>Notre equipe est à votre service tout les jours de 5h à 22h</p>
+        </div>
+
+        <div class="row ">
+            <div class="col border rounded bg-dark text-light">
+                <span class="uppercase">N</span>ous sommes aussi dans l'evenementiel notamment dans vos ceremonies de mariages.
             </div>
-            <div class="col-md-8">
-                <h1>Assinie</h1>
-                <h6 class="text-secondary">Station balnéaire prisée</h6>
-                <p class="mt-3">
-                    Assinie, ou officiellement connue sous le nom de Assinie-Mafia, est une localité du sud-est de la Côte d'Ivoire, appartenant au département d'Adiaké, dans la Région du Sud-Comoé. La localité d'Assinie est une commune avec un maire depuis, le 13 octobre 2018. L'actuel maire de la ville d'Assinie-Mafia est Magne Woelffell Pierre Réné, élu à la suite des élections municipales du 2 septembre 2023.Située à 94 km à l'est d'Abidjan , elle est proche de la frontière avec le Ghana.Assinie est une station balnéaire de la Côte d'Ivoire au bord du golfe de Guinée. Sa population est estimée à 21 941 habitants en 2021.
-                </p>
+            <div class="col">
+                <img class="img m-2" src="ressource/cake2.jpg" alt="gateau">
             </div>
         </div>
-        <div class="row border border-dark shadow p-3 m-2">
-            <div class="col-md-4">
-                <div id="carouselId2" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img
-                                src="ressource/sit2-1.jpeg"
-                                class="w-100 d-block"
-                                alt="First slide"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="ressource/sit2-2.jpeg"
-                                class="w-100 d-block"
-                                alt="Second slide"
-                            />
-                        </div>
-                    </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselId2"
-                        data-bs-slide="prev"
-                    >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselId2"
-                        data-bs-slide="next"
-                    >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>   
-            </div>
-            <div class="col-md-8">
-                <h1>Île Boulay</h1>
-                <h6 class="text-secondary">Retrait paisible sur la lagune</h6>
-                <p class="mt-3">
-                    L’île Boulay, de son vrai nom Azigbo (« l'île des Ahizi » en langue Ahizi), est une île de yopougon située dans la lagune Ébrié près d’Abidjan, en Côte d'Ivoire, à proximité immédiate du port autonome et de l’océan Atlantique.L’île Boulay est un lieu de villégiature prisé depuis plus de 30 ans en raison de son isolement tout en étant proche du centre-ville d’Abidjan (15 minutes en bateau). Des particuliers y ont installé des paillotes plus ou moins luxueuses à leurs frais et payent aux chefs coutumiers un loyer pour le terrain. L’endroit est idéal pour les sports nautiques et en particulier le ski nautique. Des champions internationaux s’y sont entraînés.
-                </p>
-            </div>
+
+        <div class="card p-2 mt-5" id="about">
+            <h1>Les mots du chefs</h1>
+            <p class="font p white raduis sized-3 shadow-grey"><span><img src="ressource/chef-100.png" alt="ico-chef"></span>Lorem ipsum dolor  sit, amet consectetur adipisicing elit. Est pariatur sit aut voluptatibus consectetur eaque hic et earumnemo minus inventore,    blanditiis reprehenderit perferendis harum! Iusto recusandae esse tempora illum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur commodi, deserunt labore animi architecto, optio  dolorumdelectus similique accusamus quibusdam suscipit hic vel eius facilis ipsam eos voluptatem iste. Laborum!
+            </p>
         </div>
-        <div class="row border border-dark shadow p-3 m-2">
-            <div class="col-md-4">
-                <div id="carouselId3" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img
-                                src="ressource/sit3-1.jpeg"
-                                class="w-100 d-block"
-                                alt="First slide"
-                            />
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="ressource/sit3-2.jpeg"
-                                class="w-100 d-block"
-                                alt="Second slide"
-                            />
+        
+
+        <h1 class="mt-5" id="avis">Les avis des clients</h1>
+        <div class="d-flex flex-wrap gap-2">
+            <div class="col-lg card p-3">
+                <div class="d-flex justify-content-between">
+                    <div>Léo Fr**ck</div>
+                    <div class="text-green">bien</div>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur, velit debitis nobis officiis recusandae, dolores ipsa quos dignissimos accusamus vel eos nihil provident voluptatem, atque autem ad. Et, possimus.
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div><img class="ico" src="ressource/star-90.png"><img class="ico" src="ressource/star-90.png"></div>
+                    <div>2/11/2024</div>
+                </div>
+            </div>
+            <div class="col-lg card p-3">
+                <div class="d-flex justify-content-between">
+                    <div>Léo Fr**ck</div>
+                    <div class="text-green">bien</div>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur, velit debitis nobis officiis recusandae, dolores ipsa quos dignissimos accusamus vel eos nihil provident voluptatem, atque autem ad. Et, possimus.
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div><img class="ico" src="ressource/star-90.png"><img class="ico" src="ressource/star-90.png"></div>
+                    <div>2/11/2024</div>
+                </div>
+            </div>
+            <div class="col-lg card p-3">
+                <div class="d-flex justify-content-between">
+                    <div>Léo Fr**ck</div>
+                    <div class="text-green">bien</div>
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur, velit debitis nobis officiis recusandae, dolores ipsa quos dignissimos accusamus vel eos nihil provident voluptatem, atque autem ad. Et, possimus.
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div><img class="ico" src="ressource/star-90.png"><img class="ico" src="ressource/star-90.png"></div>
+                    <div>2/11/2024</div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        
+        <div class="h1 text-center mt-5" id="contact">Contact</div>
+        <div class="row">
+            <div class="col">
+                <h3>Tel</h3>
+                <ul>
+                    <li>+00 111 222</li>
+                    <li>+55 222 522</li>
+                </ul>
+                <h3>Email</h3>
+                <ul>
+                    <li>moncake@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Contacter nous ici</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="" class="form-label">Object</label>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        class="form-control"
+                                        placeholder=""
+                                    />
+                                </div>
+                                <div class="col">
+                                    <label for="" class="form-label">Email</label>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id=""
+                                        class="form-control"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Message</label>
+                                    <textarea class="form-control" name="" id="" rows="3"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselId3"
-                        data-bs-slide="prev"
-                    >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselId3"
-                        data-bs-slide="next"
-                    >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>   
+                    <div class="card-footer text-muted"><button class="btn btn-dark">Envoyer</button></div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h1>Réserve de Dahliafleur</h1>
-                <h6 class="text-secondary">Jardin écologique</h6>
-                <p class="mt-3">
-                    La Réserve naturelle de Dahliafleur est une réserve naturelle en Côte d’Ivoire créée le 14 octobre 2004. Elle est située dans la commune de Bingerville, dans le district d’Abidjan, et s’étend sur une superficie de 148 hectares.La réserve naturelle de Dahliafleur est localisée dans la commune de Bingerville, située dans le district d'Abidjan, dans le Sud de la Côte d'Ivoire. Plus précisément, elle se trouve dans le quartier Abatta, couvrant une superficie de 148 hectares. Ses limites sont définies au nord par des villages, à l'est par la lagune Ebrié. Les frontières sud et ouest de la réserve sont délimitées par différents titres fonciers.
-                </p>
-            </div>
-        </div>
-        <h1 id="gdesc" class="p-3 mt-2">Galerie</h1>
-        <div
-            class="row justify-content-center align-items-center g-2"
-        >
-            <div class="col"><img class="w-100" src="ressource/sit1-1.jpg" height="300px"></div>
-        </div>
-        <div
-            class="row justify-content-center align-items-center g-2"
-        >
-            <div class="col"><img class="w-100" src="ressource/sit1-2.jpg"  height="300px"></div>
-            <div class="col"><img class="w-100" src="ressource/sit1-3.jpeg"  height="300px"></div>
-            <div class="col"><img class="w-100" src="ressource/sit2-1.jpeg"  height="300px"></div>
-        </div>
-        <div
-            class="row justify-content-center align-items-center g-2"
-        >
-            <div class="col"><img class="w-100" src="ressource/sit2-2.jpeg"  height="300px"></div>
-            <div class="col"><img class="w-100" src="ressource/sit3-1.jpeg"  height="300px"></div>
-            <div class="col"><img class="w-100" src="ressource/sit3-2.jpeg"  height="300px"></div>
         </div>
     </div>
+
+    <div class="footer bg pink p-2 mt-5 text-dark">
+        <div
+            class="row justify-content-center g-2 m-5"
+        >
+            <div class="col-sm border-end border-dark border-2">
+                <h3>Plateformes</h3>
+                <div class="row g-2">
+                    <div class="col">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Whatsapp / Tel: +000 11 55</li>
+                    <li>Email: MonCake@gmail.com </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <div class="footer bg-dark text-white p-2 text-center">
-        <h5>Tous droits reservé SiToRCI 2025-2026</h5>
+        <h5>Tous droits reservé MonSiteEcole 2025-2026</h5>
     </div>
 </body>
 </html>
