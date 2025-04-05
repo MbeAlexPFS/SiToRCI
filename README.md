@@ -1,5 +1,5 @@
 # SiToRCI (les Sites TouRistiques de la Côte d'Ivoire)
-Est un projet presonnel dans lequel on peut rechercher des sites touristiques par régions via une carte interactive du pays.
+Est un projet personnel dans lequel on peut rechercher des sites touristiques par régions via une carte interactive du pays.
 
 ## Fonctionnalités
 - Barre de recherche.
