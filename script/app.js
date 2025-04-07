@@ -166,7 +166,7 @@ function update() {
                     <div class="d-grid gap-2">
                         <button
                             type="button"
-                            onclick='show("${region}", "${el}")'
+                            onclick=${show(region, el)}
                             data-bs-toggle="modal" data-bs-target="#seeMore"
                             class="btn btn-primary"
                         >
