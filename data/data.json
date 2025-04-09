@@ -12,8 +12,8 @@
             "ShortDesc": "Espace vert historique",
             "Desc": "Créé en 1904, ce jardin abrite des centaines d’espèces végétales et un cadre paisible pour des promenades."
         },
-        "Musée des Civilisations de Côte d Ivoire": {
-            "Title": "Musée des Civilisations de Côte d Ivoire",
+        "Musée des Civilisations de Côte d'Ivoire": {
+            "Title": "Musée des Civilisations de Côte d'Ivoire",
             "ShortDesc": "Trésor culturel ivoirien",
             "Desc": "Ce musée expose des masques, des statues et des objets traditionnels représentant la diversité ethnique du pays."
         }
@@ -23,12 +23,12 @@
         "Basilique Notre-Dame de la Paix": {
             "Title": "Basilique Notre-Dame de la Paix",
             "ShortDesc": "La plus grande basilique au monde",
-            "Desc": "Inspirée de la basilique Saint-Pierre de Rome, cette imposante structure est un symbole de paix et de foi en Côte d Ivoire."
+            "Desc": "Inspirée de la basilique Saint-Pierre de Rome, cette imposante structure est un symbole de paix et de foi en Côte d'Ivoire."
         },
         "Lac aux Caïmans": {
             "Title": "Lac aux Caïmans",
             "ShortDesc": "Un lac sacré abritant des caïmans",
-            "Desc": "Ce lac est un lieu sacré où des caïmans sont nourris rituellement. Une attraction unique liée à l histoire de la ville."
+            "Desc": "Ce lac est un lieu sacré où des caïmans sont nourris rituellement. Une attraction unique liée à l'histoire de la ville."
         },
         "Fondation Félix Houphouët-Boigny": {
             "Title": "Fondation Félix Houphouët-Boigny",
@@ -38,14 +38,14 @@
     },
 
     "Lacs": {
-        "Parc National d Azagny": {
-            "Title": "Parc National d Azagny",
+        "Parc National d'Azagny": {
+            "Title": "Parc National d'Azagny",
             "ShortDesc": "Réserve naturelle riche en biodiversité",
             "Desc": "Ce parc abrite éléphants, hippopotames et oiseaux rares, idéal pour des safaris et randonnées en pleine nature."
         },
         "Grand-Bassam": {
             "Title": "Grand-Bassam",
-            "ShortDesc": "Ville historique classée à l UNESCO",
+            "ShortDesc": "Ville historique classée à l'UNESCO",
             "Desc": "Ancienne capitale coloniale, connue pour ses plages, son architecture vintage et son musée du costume."
         },
         "Îles Ehotilé": {
@@ -58,7 +58,7 @@
     "Comoé": {
         "Parc National de la Comoé": {
             "Title": "Parc National de la Comoé",
-            "ShortDesc": "Plus grande réserve d Afrique de l Ouest",
+            "ShortDesc": "Plus grande réserve d'Afrique de l'Ouest",
             "Desc": "Classé UNESCO, il abrite lions, éléphants et antilopes, avec des paysages de savane et de forêt-galerie."
         },
         "Monts Nimba": {
@@ -66,8 +66,8 @@
             "ShortDesc": "Site transfrontalier classé UNESCO",
             "Desc": "Chaîne de montagnes abritant une biodiversité exceptionnelle, dont des espèces endémiques comme le crapaud vivipare."
         },
-        "Réserve de N Zo": {
-            "Title": "Réserve de N Zo",
+        "Réserve de N'Zo": {
+            "Title": "Réserve de N'Zo",
             "ShortDesc": "Sanctuaire pour éléphants et chimpanzés",
             "Desc": "Cette réserve privée jouxte le parc de la Comoé et offre des safaris pour observer des éléphants de forêt, des chimpanzés et des oiseaux rares dans un cadre préservé."
         }
@@ -82,11 +82,11 @@
         "Forêt Classée du Scio": {
             "Title": "Forêt Classée du Scio",
             "ShortDesc": "Ecosystème préservé",
-            "Desc": "Forêt dense abritant des primates et des essences rares, idéale pour la randonnée et l étude de la flore."
+            "Desc": "Forêt dense abritant des primates et des essences rares, idéale pour la randonnée et l'étude de la flore."
         },
-        "Ville d Odienné": {
-            "Title": "Ville d Odienné",
-            "ShortDesc": "Berceau de l empire Malinké",
+        "Ville d'Odienné": {
+            "Title": "Ville d'Odienné",
+            "ShortDesc": "Berceau de l'empire Malinké",
             "Desc": "Ville historique avec le tombeau de Samory Touré et des traditions culturelles vivaces."
         }
     },
@@ -95,17 +95,17 @@
         "Parc National de Taï": {
             "Title": "Parc National de Taï",
             "ShortDesc": "Forêt primaire classée UNESCO",
-            "Desc": "Dernière grande forêt tropicale d Afrique de l Ouest, refuge des chimpanzés et des hippopotames pygmées."
+            "Desc": "Dernière grande forêt tropicale d'Afrique de l'Ouest, refuge des chimpanzés et des hippopotames pygmées."
         },
         "Cascades de Nahiri": {
             "Title": "Cascades de Nahiri",
-            "ShortDesc": "Chutes d eau spectaculaires",
-            "Desc": "Série de cascades entourées d une végétation luxuriante, lieu de baignade et de pique-nique."
+            "ShortDesc": "Chutes d'eau spectaculaires",
+            "Desc": "Série de cascades entourées d'une végétation luxuriante, lieu de baignade et de pique-nique."
         },
         "Sanctuaire de Marahoué": {
             "Title": "Sanctuaire de Marahoué",
             "ShortDesc": "Zone protégée pour la faune",
-            "Desc": "Ancien parc national, aujourd hui sanctuaire pour éléphants et oiseaux migrateurs."
+            "Desc": "Ancien parc national, aujourd'hui sanctuaire pour éléphants et oiseaux migrateurs."
         }
     },
 
@@ -118,7 +118,7 @@
         "Île Boulay": {
             "Title": "Île Boulay",
             "ShortDesc": "Retrait paisible sur la lagune",
-            "Desc": "Petite île idéale pour des escapades romantiques ou des déjeuners en bord d eau."
+            "Desc": "Petite île idéale pour des escapades romantiques ou des déjeuners en bord d'eau."
         },
         "Réserve de Dahliafleur": {
             "Title": "Réserve de Dahliafleur",
@@ -130,7 +130,7 @@
     "Montagnes": {
         "Mont Tonkpi": {
             "Title": "Mont Tonkpi",
-            "ShortDesc": "Point culminant de l Ouest",
+            "ShortDesc": "Point culminant de l'Ouest",
             "Desc": "Sommet offrant des vues panoramiques sur les paysages montagneux et les plantations de café."
         },
         "Ville de Man": {
@@ -141,7 +141,7 @@
         "Cascade de Kpata": {
             "Title": "Cascade de Kpata",
             "ShortDesc": "Site naturel rafraîchissant",
-            "Desc": "Chute d eau entourée de rochers, lieu de baignade et de détente en pleine forêt."
+            "Desc": "Chute d'eau entourée de rochers, lieu de baignade et de détente en pleine forêt."
         }
     },
 
@@ -167,7 +167,7 @@
         "Parc National de la Comoé (extension nord)": {
             "Title": "Parc National de la Comoé (extension nord)",
             "ShortDesc": "Zone sauvage préservée",
-            "Desc": "Partie nord du parc, moins fréquentée, où l on peut observer des léopards et des phacochères."
+            "Desc": "Partie nord du parc, moins fréquentée, où l'on peut observer des léopards et des phacochères."
         },
         "Ville de Korhogo": {
             "Title": "Ville de Korhogo",
@@ -198,17 +198,17 @@
         "Kossou": {
             "Title": "Kossou",
             "ShortDesc": "Lac de barrage et nature",
-            "Desc": "Vaste plan d eau artificiel propice à la pêche, aux balades en bateau et à l observation des oiseaux."
+            "Desc": "Vaste plan d'eau artificiel propice à la pêche, aux balades en bateau et à l'observation des oiseaux."
         },
         "Toumodi": {
             "Title": "Toumodi",
             "ShortDesc": "Carrefour agricole",
-            "Desc": "Région connue pour ses plantations d ananas et son marché coloré de produits locaux."
+            "Desc": "Région connue pour ses plantations d'ananas et son marché coloré de produits locaux."
         },
-        "Vallée du N Zi": {
-            "Title": "Vallée du N Zi",
+        "Vallée du N'Zi": {
+            "Title": "Vallée du N'Zi",
             "ShortDesc": "Paysages fluviaux",
-            "Desc": "Zone rurale traversée par la rivière N Zi, idéale pour l agrotourisme et les rencontres avec les communautés Baoulé."
+            "Desc": "Zone rurale traversée par la rivière N'Zi, idéale pour l'agrotourisme et les rencontres avec les communautés Baoulé."
         }
     },
 
@@ -226,7 +226,7 @@
         "Ville de Séguéla": {
             "Title": "Ville de Séguéla",
             "ShortDesc": "Cœur de la culture Malinké",
-            "Desc": "Connue pour son marché d or artisanal et ses danses traditionnelles."
+            "Desc": "Connue pour son marché d'or artisanal et ses danses traditionnelles."
         }
     },
 
